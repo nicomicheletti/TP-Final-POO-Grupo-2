@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{141095DF-CF80-4514-BEE0-5F2856DEA828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "Controlador\Controlador.csproj", "{E0C0AA03-FE47-4904-A37E-BE6BE7432B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{4669A001-5C79-4F1E-B97F-F36511B30298}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{141095DF-CF80-4514-BEE0-5F2856DEA828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141095DF-CF80-4514-BEE0-5F2856DEA828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141095DF-CF80-4514-BEE0-5F2856DEA828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141095DF-CF80-4514-BEE0-5F2856DEA828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0C0AA03-FE47-4904-A37E-BE6BE7432B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0C0AA03-FE47-4904-A37E-BE6BE7432B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0C0AA03-FE47-4904-A37E-BE6BE7432B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0C0AA03-FE47-4904-A37E-BE6BE7432B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4669A001-5C79-4F1E-B97F-F36511B30298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4669A001-5C79-4F1E-B97F-F36511B30298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4669A001-5C79-4F1E-B97F-F36511B30298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4669A001-5C79-4F1E-B97F-F36511B30298}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4989044A-255C-49DF-A399-9C927D5927DC}
+	EndGlobalSection
+EndGlobal
