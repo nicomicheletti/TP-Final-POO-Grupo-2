@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nico Micheletti\\source\\repos\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj": {}
+    "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nico Micheletti\\source\\repos\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj": {
+    "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nico Micheletti\\source\\repos\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj",
+        "projectUniqueName": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj",
         "projectName": "Vista",
-        "projectPath": "C:\\Users\\Nico Micheletti\\source\\repos\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj",
+        "projectPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj",
         "packagesPath": "C:\\Users\\Nico Micheletti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nico Micheletti\\source\\repos\\TP-Final-POO-Grupo-2\\Vista\\obj\\",
+        "outputPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Vista\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
