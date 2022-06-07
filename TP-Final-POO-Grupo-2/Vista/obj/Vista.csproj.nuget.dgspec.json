@@ -4,6 +4,36 @@
     "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj",
+        "projectName": "Controlador",
+        "projectPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj",
+        "projectName": "Modelo",
+        "projectPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +61,14 @@
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj": {
+                "projectPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj"
+              },
+              "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj": {
+                "projectPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

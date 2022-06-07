@@ -279,6 +279,24 @@
             "rid": "win"
           }
         }
+      },
+      "Controlador/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Controlador.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Controlador.dll": {}
+        }
+      },
+      "Modelo/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Modelo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modelo.dll": {}
+        }
       }
     }
   },
@@ -1017,11 +1035,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Controlador/1.0.0": {
+      "type": "project",
+      "path": "../Controlador/Controlador.csproj",
+      "msbuildProject": "../Controlador/Controlador.csproj"
+    },
+    "Modelo/1.0.0": {
+      "type": "project",
+      "path": "../Modelo/Modelo.csproj",
+      "msbuildProject": "../Modelo/Modelo.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "EntityFramework >= 6.4.4"
+      "Controlador >= 1.0.0",
+      "EntityFramework >= 6.4.4",
+      "Modelo >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1055,7 +1085,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj": {
+              "projectPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj"
+            },
+            "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj": {
+              "projectPath": "C:\\Users\\Nico Micheletti\\Desktop\\TP FINAL POO\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
