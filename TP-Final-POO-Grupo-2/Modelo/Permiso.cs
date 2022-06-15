@@ -12,10 +12,10 @@ namespace Modelo
     using System;
     using System.Collections.Generic;
     
-    public partial class Permisos
+    public partial class Permiso
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Permisos()
+        public Permiso()
         {
             this.Formulario = new HashSet<Formulario>();
         }

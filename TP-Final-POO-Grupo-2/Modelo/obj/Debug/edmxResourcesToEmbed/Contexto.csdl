@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Contexto" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
   <EntityContainer Name="ContextoContainer" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="UsuarioSet" EntityType="Contexto.Usuario" />
-    <EntitySet Name="PerfilSet" EntityType="Contexto.Perfil" />
-    <EntitySet Name="FormularioSet" EntityType="Contexto.Formulario" />
-    <EntitySet Name="PermisosSet" EntityType="Contexto.Permisos" />
+    <EntitySet Name="Usuarios" EntityType="Contexto.Usuario" />
+    <EntitySet Name="Perfiles" EntityType="Contexto.Perfil" />
+    <EntitySet Name="Formularios" EntityType="Contexto.Formulario" />
+    <EntitySet Name="Permisos" EntityType="Contexto.Permiso" />
     <AssociationSet Name="UsuarioPerfil" Association="Contexto.UsuarioPerfil">
-      <End Role="Usuario" EntitySet="UsuarioSet" />
-      <End Role="Perfil" EntitySet="PerfilSet" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Perfil" EntitySet="Perfiles" />
     </AssociationSet>
     <AssociationSet Name="PerfilFormulario" Association="Contexto.PerfilFormulario">
-      <End Role="Perfil" EntitySet="PerfilSet" />
-      <End Role="Formulario" EntitySet="FormularioSet" />
+      <End Role="Perfil" EntitySet="Perfiles" />
+      <End Role="Formulario" EntitySet="Formularios" />
     </AssociationSet>
     <AssociationSet Name="FormularioPermisos" Association="Contexto.FormularioPermisos">
-      <End Role="Formulario" EntitySet="FormularioSet" />
-      <End Role="Permisos" EntitySet="PermisosSet" />
+      <End Role="Formulario" EntitySet="Formularios" />
+      <End Role="Permisos" EntitySet="Permisos" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Usuario">
@@ -48,7 +48,7 @@
     <Property Name="Nombre" Type="String" Nullable="false" />
     <Property Name="NombreSistema" Type="String" Nullable="false" />
   </EntityType>
-  <EntityType Name="Permisos">
+  <EntityType Name="Permiso">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -67,6 +67,6 @@
   </Association>
   <Association Name="FormularioPermisos">
     <End Type="Contexto.Formulario" Role="Formulario" Multiplicity="*" />
-    <End Type="Contexto.Permisos" Role="Permisos" Multiplicity="*" />
+    <End Type="Contexto.Permiso" Role="Permisos" Multiplicity="*" />
   </Association>
 </Schema>

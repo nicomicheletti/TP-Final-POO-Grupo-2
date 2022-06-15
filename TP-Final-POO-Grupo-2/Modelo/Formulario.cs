@@ -18,7 +18,7 @@ namespace Modelo
         public Formulario()
         {
             this.Perfil = new HashSet<Perfil>();
-            this.Permisos = new HashSet<Permisos>();
+            this.Permisos = new HashSet<Permiso>();
         }
     
         public int Id { get; set; }
@@ -28,6 +28,6 @@ namespace Modelo
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Perfil> Perfil { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Permisos> Permisos { get; set; }
+        public virtual ICollection<Permiso> Permisos { get; set; }
     }
 }
