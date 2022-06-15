@@ -4,11 +4,11 @@
     "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Vista\\Vista.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj": {
+    "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controladora.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj",
-        "projectName": "Controlador",
-        "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj",
+        "projectUniqueName": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controladora.csproj",
+        "projectName": "Controladora",
+        "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controladora.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
@@ -66,8 +66,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj": {
-                "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj"
+              "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controladora.csproj": {
+                "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controladora.csproj"
               },
               "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj": {
                 "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj"

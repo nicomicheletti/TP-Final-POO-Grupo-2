@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Vista/1.0.0": {
         "dependencies": {
-          "Controlador": "1.0.0",
+          "Controladora": "1.0.0",
           "EntityFramework": "6.4.4",
           "Modelo": "1.0.0"
         },
@@ -142,7 +142,7 @@
           "System.Drawing.Common": "4.7.0"
         }
       },
-      "Controlador/1.0.0": {
+      "Controladora/1.0.0": {
         "dependencies": {
           "Modelo": "1.0.0"
         },
@@ -296,7 +296,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "Controlador/1.0.0": {
+    "Controladora/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Controlador\Controlador.csproj" />
+    <ProjectReference Include="..\Controlador\Controladora.csproj" />
     <ProjectReference Include="..\Modelo\Modelo.csproj" />
   </ItemGroup>
 

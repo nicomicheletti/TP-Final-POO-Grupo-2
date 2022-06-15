@@ -280,16 +280,16 @@
           }
         }
       },
-      "Controlador/1.0.0": {
+      "Controladora/1.0.0": {
         "type": "project",
         "dependencies": {
           "Modelo": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Controlador.dll": {}
+          "bin/placeholder/Controladora.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Controlador.dll": {}
+          "bin/placeholder/Controladora.dll": {}
         }
       },
       "Modelo/1.0.0": {
@@ -1039,10 +1039,10 @@
         "version.txt"
       ]
     },
-    "Controlador/1.0.0": {
+    "Controladora/1.0.0": {
       "type": "project",
-      "path": "../Controlador/Controlador.csproj",
-      "msbuildProject": "../Controlador/Controlador.csproj"
+      "path": "../Controlador/Controladora.csproj",
+      "msbuildProject": "../Controlador/Controladora.csproj"
     },
     "Modelo/1.0.0": {
       "type": "project",
@@ -1052,7 +1052,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Controlador >= 1.0.0",
+      "Controladora >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Modelo >= 1.0.0"
     ]
@@ -1089,8 +1089,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj": {
-              "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controlador.csproj"
+            "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controladora.csproj": {
+              "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Controlador\\Controladora.csproj"
             },
             "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj": {
               "projectPath": "C:\\Users\\lautaro\\Documents\\Repos\\TP-Final-POO-Grupo-2\\TP-Final-POO-Grupo-2\\Modelo\\Modelo.csproj"
