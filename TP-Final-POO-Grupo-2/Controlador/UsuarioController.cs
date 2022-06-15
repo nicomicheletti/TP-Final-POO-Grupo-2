@@ -21,7 +21,21 @@ namespace Controlador
 
         public List<Modelo.Usuario> GetAllUsuarios()
         {
-            return Modelo.SingletonContext.obtener_instancia().Contexto.Usuarios.Include("Perfil").ToList();
+            return Modelo.SingletonContext.obtener_instancia().Contexto.Usuarios.ToList();
+        }
+        public bool AddUsuario(Modelo.Usuario usuario)
+        {
+            try
+            {
+                Modelo.SingletonContext.obtener_instancia().Contexto.Usuarios.Add(usuario);
+                Modelo.SingletonContext.obtener_instancia().Contexto.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
         }
     }
 }

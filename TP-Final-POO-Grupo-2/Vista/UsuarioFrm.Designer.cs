@@ -28,35 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.nombreValue = new System.Windows.Forms.TextBox();
             this.emailValue = new System.Windows.Forms.TextBox();
             this.dniValue = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.perfilCombobox = new System.Windows.Forms.ComboBox();
+            this.perfilBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.contraseñaValue = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // nombreValue
             // 
-            this.nombreValue.Location = new System.Drawing.Point(137, 70);
+            this.nombreValue.Location = new System.Drawing.Point(153, 22);
             this.nombreValue.Name = "nombreValue";
             this.nombreValue.Size = new System.Drawing.Size(100, 23);
             this.nombreValue.TabIndex = 0;
             // 
             // emailValue
             // 
-            this.emailValue.Location = new System.Drawing.Point(137, 111);
+            this.emailValue.Location = new System.Drawing.Point(153, 63);
             this.emailValue.Name = "emailValue";
             this.emailValue.Size = new System.Drawing.Size(100, 23);
             this.emailValue.TabIndex = 1;
             // 
             // dniValue
             // 
-            this.dniValue.Location = new System.Drawing.Point(137, 153);
+            this.dniValue.Location = new System.Drawing.Point(153, 153);
             this.dniValue.Name = "dniValue";
             this.dniValue.Size = new System.Drawing.Size(100, 23);
             this.dniValue.TabIndex = 2;
@@ -64,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 73);
+            this.label1.Location = new System.Drawing.Point(80, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 3;
@@ -73,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(80, 114);
+            this.label2.Location = new System.Drawing.Point(80, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 15);
             this.label2.TabIndex = 4;
@@ -88,13 +93,18 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Dni";
             // 
-            // comboBox1
+            // perfilCombobox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(137, 197);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 23);
-            this.comboBox1.TabIndex = 6;
+            this.perfilCombobox.DataSource = this.perfilBindingSource;
+            this.perfilCombobox.FormattingEnabled = true;
+            this.perfilCombobox.Location = new System.Drawing.Point(153, 197);
+            this.perfilCombobox.Name = "perfilCombobox";
+            this.perfilCombobox.Size = new System.Drawing.Size(100, 23);
+            this.perfilCombobox.TabIndex = 6;
+            // 
+            // perfilBindingSource
+            // 
+            this.perfilBindingSource.DataSource = typeof(Modelo.Perfil);
             // 
             // label4
             // 
@@ -126,15 +136,33 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // contraseñaValue
+            // 
+            this.contraseñaValue.Location = new System.Drawing.Point(153, 109);
+            this.contraseñaValue.Name = "contraseñaValue";
+            this.contraseñaValue.Size = new System.Drawing.Size(100, 23);
+            this.contraseñaValue.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(80, 112);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Contraseña";
+            // 
             // UsuarioFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 287);
+            this.ClientSize = new System.Drawing.Size(401, 337);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.contraseñaValue);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.perfilCombobox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -142,7 +170,9 @@
             this.Controls.Add(this.emailValue);
             this.Controls.Add(this.nombreValue);
             this.Name = "UsuarioFrm";
-            this.Text = "UsuarioFrm";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.UsuarioFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,9 +186,12 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private ComboBox comboBox1;
+        private ComboBox perfilCombobox;
         private Label label4;
         private Button btnGuardar;
         private Button button2;
+        private BindingSource perfilBindingSource;
+        private TextBox contraseñaValue;
+        private Label label5;
     }
 }

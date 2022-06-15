@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnAgregarUsuario = new System.Windows.Forms.Button();
-            this.btnModificarUsuario = new System.Windows.Forms.Button();
-            this.btnEliminarUsuario = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contraseñaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perfilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAgregarUsuario = new System.Windows.Forms.Button();
+            this.btnModificarUsuario = new System.Windows.Forms.Button();
+            this.btnEliminarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -59,41 +59,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(74, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(757, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(646, 295);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // usuarioBindingSource
-            // 
-            this.usuarioBindingSource.DataSource = typeof(Modelo.Usuario);
-            // 
-            // btnAgregarUsuario
-            // 
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(62, 394);
-            this.btnAgregarUsuario.Name = "btnAgregarUsuario";
-            this.btnAgregarUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarUsuario.TabIndex = 1;
-            this.btnAgregarUsuario.Text = "Agregar";
-            this.btnAgregarUsuario.UseVisualStyleBackColor = true;
-            this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
-            // 
-            // btnModificarUsuario
-            // 
-            this.btnModificarUsuario.Location = new System.Drawing.Point(160, 394);
-            this.btnModificarUsuario.Name = "btnModificarUsuario";
-            this.btnModificarUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnModificarUsuario.TabIndex = 2;
-            this.btnModificarUsuario.Text = "Modificar";
-            this.btnModificarUsuario.UseVisualStyleBackColor = true;
-            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
-            // 
-            // btnEliminarUsuario
-            // 
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(264, 394);
-            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminarUsuario.TabIndex = 3;
-            this.btnEliminarUsuario.Text = "Eliminar";
-            this.btnEliminarUsuario.UseVisualStyleBackColor = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -130,6 +97,39 @@
             this.perfilDataGridViewTextBoxColumn.DataPropertyName = "Perfil";
             this.perfilDataGridViewTextBoxColumn.HeaderText = "Perfil";
             this.perfilDataGridViewTextBoxColumn.Name = "perfilDataGridViewTextBoxColumn";
+            // 
+            // usuarioBindingSource
+            // 
+            this.usuarioBindingSource.DataSource = typeof(Modelo.Usuario);
+            // 
+            // btnAgregarUsuario
+            // 
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(62, 394);
+            this.btnAgregarUsuario.Name = "btnAgregarUsuario";
+            this.btnAgregarUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarUsuario.TabIndex = 1;
+            this.btnAgregarUsuario.Text = "Agregar";
+            this.btnAgregarUsuario.UseVisualStyleBackColor = true;
+            this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
+            // 
+            // btnModificarUsuario
+            // 
+            this.btnModificarUsuario.Location = new System.Drawing.Point(160, 394);
+            this.btnModificarUsuario.Name = "btnModificarUsuario";
+            this.btnModificarUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnModificarUsuario.TabIndex = 2;
+            this.btnModificarUsuario.Text = "Modificar";
+            this.btnModificarUsuario.UseVisualStyleBackColor = true;
+            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
+            // 
+            // btnEliminarUsuario
+            // 
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(264, 394);
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarUsuario.TabIndex = 3;
+            this.btnEliminarUsuario.Text = "Eliminar";
+            this.btnEliminarUsuario.UseVisualStyleBackColor = true;
             // 
             // GestionarUsuarioFrm
             // 

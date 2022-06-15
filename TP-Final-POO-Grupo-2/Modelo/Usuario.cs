@@ -14,6 +14,20 @@ namespace Modelo
     
     public partial class Usuario
     {
+        public Usuario()
+        {
+
+        }
+        public Usuario(string nombre, string email, string dni, string contraseña, Perfil perfil)
+        {
+            //Id = id;
+            Nombre = nombre;
+            Email = email;
+            Dni = dni;
+            Contraseña = contraseña;
+            Perfil = perfil;
+        }
+
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Email { get; set; }

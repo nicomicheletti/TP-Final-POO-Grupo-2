@@ -22,15 +22,16 @@ namespace Vista
         {
             UsuarioFrm usuarioFrm = new UsuarioFrm();
             usuarioFrm.Show();
-
-            var a = Controlador.UsuarioController.obtener_instancia().GetAllUsuarios();
-            var b = a;
+            Hide();
         }
 
         private void btnModificarUsuario_Click(object sender, EventArgs e)
         {
-            ModificarUsuarioFrm modificarFrm = new ModificarUsuarioFrm();
-            modificarFrm.Show();
+            //ModificarUsuarioFrm modificarFrm = new ModificarUsuarioFrm();
+            //modificarFrm.Show();
+            UsuarioFrm usuarioFrm = new UsuarioFrm(true);
+            usuarioFrm.Show();
+            Hide();
         }
 
         private void GestionarUsuarioFrm_Load(object sender, EventArgs e)
