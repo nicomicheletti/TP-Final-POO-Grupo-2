@@ -11,26 +11,26 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class GestionarUsuarioFrm : Form
+    public partial class ManageUserForm : Form
     {
-        public GestionarUsuarioFrm()
+        public ManageUserForm()
         {
             InitializeComponent();
         }
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
-            UsuarioFrm usuarioFrm = new UsuarioFrm();
+            AddUserForm usuarioFrm = new AddUserForm();
             usuarioFrm.Show();
             Hide();
         }
 
+        //EDITAR USUARIO
         private void btnModificarUsuario_Click(object sender, EventArgs e)
         {
-            //ModificarUsuarioFrm modificarFrm = new ModificarUsuarioFrm();
-            //modificarFrm.Show();
-            UsuarioFrm usuarioFrm = new UsuarioFrm(true);
-            usuarioFrm.Show();
+            var selectedUser = (Modelo.Usuario)usuarioBindingSource.Current;
+            EditUserForm modificarFrm = new EditUserForm(selectedUser);
+            modificarFrm.Show();
             Hide();
         }
 

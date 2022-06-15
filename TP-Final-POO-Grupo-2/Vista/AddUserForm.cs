@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class UsuarioFrm : Form
+    public partial class AddUserForm : Form
     {
         public bool WantsToModify;
-        public UsuarioFrm()
+        public AddUserForm()
         {
 
             InitializeComponent();
         }
-        public UsuarioFrm(bool wantsToModify)
-        {
-            WantsToModify = wantsToModify;
-            InitializeComponent();
-        }
+        //public UsuarioFrm(bool wantsToModify)
+        //{
+        //    WantsToModify = wantsToModify;
+        //    InitializeComponent();
+        //}
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace Vista
                     MessageBox.Show("Error al guardar usuario");
                 }
                 Hide();
-                GestionarUsuarioFrm gestionarUsuarioFrm = new GestionarUsuarioFrm();
+                ManageUserForm gestionarUsuarioFrm = new ManageUserForm();
                 gestionarUsuarioFrm.Show();
             }
         }

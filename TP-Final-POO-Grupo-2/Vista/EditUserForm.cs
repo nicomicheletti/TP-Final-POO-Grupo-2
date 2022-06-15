@@ -10,10 +10,16 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class ModificarUsuarioFrm : Form
+    public partial class EditUserForm : Form
     {
-        public ModificarUsuarioFrm()
+        Modelo.Usuario usuario = new Modelo.Usuario();
+        public EditUserForm()
         {
+            InitializeComponent();
+        }
+        public EditUserForm(Modelo.Usuario usuario)
+        {
+            this.usuario = usuario;
             InitializeComponent();
         }
     }

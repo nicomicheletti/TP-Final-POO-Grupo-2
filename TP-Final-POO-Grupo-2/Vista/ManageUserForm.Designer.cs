@@ -1,6 +1,6 @@
 ﻿namespace Vista
 {
-    partial class GestionarUsuarioFrm
+    partial class ManageUserForm
     {
         /// <summary>
         /// Required designer variable.

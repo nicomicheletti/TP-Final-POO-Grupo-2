@@ -19,10 +19,6 @@ C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\bin\Debug\net6.0-windows\Modelo.pdb
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\bin\Debug\net6.0-windows\Modelo.dll.config
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.csproj.AssemblyReference.cache
-C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.GestionarUsuarioFrm.resources
-C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.LoginFrm.resources
-C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.ModificarUsuarioFrm.resources
-C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.UsuarioFrm.resources
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.csproj.GenerateResource.cache
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.AssemblyInfoInputs.cache
@@ -34,3 +30,7 @@ C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.pdb
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.genruntimeconfig.cache
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\ref\Vista.dll
+C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.AddUserForm.resources
+C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.EditUserForm.resources
+C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.LoginForm.resources
+C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.ManageUserForm.resources
