@@ -29,8 +29,6 @@ namespace Vista
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
             Hide();
-            ManageUserForm gestionarUsuarioFrm = new ManageUserForm();
-            gestionarUsuarioFrm.Show();
         }
     }
 }

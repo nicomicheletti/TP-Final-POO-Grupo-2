@@ -34,3 +34,4 @@ C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.EditUserForm.resources
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.LoginForm.resources
 C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.ManageUserForm.resources
+C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Vista\obj\Debug\net6.0-windows\Vista.MainMenuForm.resources
