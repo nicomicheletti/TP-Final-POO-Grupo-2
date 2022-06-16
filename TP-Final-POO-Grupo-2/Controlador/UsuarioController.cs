@@ -10,7 +10,7 @@ namespace Controlador
     {
         private static UsuarioController _instancia;
 
-        readonly Modelo.ContextoContainer _context =Modelo.SingletonContext.obtener_instancia().Contexto;
+        readonly Modelo.ContextoContainer _context = Modelo.SingletonContext.obtener_instancia().Contexto;
         public static UsuarioController obtener_instancia()
         {
             if (_instancia == null)
@@ -43,7 +43,7 @@ namespace Controlador
         {
             try
             {
-               var findedUser = _context.Usuarios.FirstOrDefault(x => x.Id == usuario.Id);
+                var findedUser = _context.Usuarios.FirstOrDefault(x => x.Id == usuario.Id);
                 if (findedUser == null)
                 {
                     return false;
@@ -56,6 +56,39 @@ namespace Controlador
                 findedUser.Perfil = usuario.Perfil;
 
                 _context.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+        public bool DeleteUser(Modelo.Usuario usuario)
+        {
+            try
+            {
+                var userToDelete = _context.Usuarios.FirstOrDefault(x => x.Id == usuario.Id);
+                _context.Usuarios.Remove(userToDelete);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+        public bool LoginUser(string email, string contraseña)
+        {
+            try
+            {
+                var user = _context.Usuarios.FirstOrDefault(x => x.Email == email && x.Contraseña == contraseña);
+                if (user == null)
+                {
+                    return false;
+                }
+    
                 return true;
             }
             catch (Exception e)

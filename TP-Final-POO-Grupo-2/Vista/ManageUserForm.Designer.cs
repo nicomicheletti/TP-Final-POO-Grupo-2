@@ -130,8 +130,9 @@
             this.btnEliminarUsuario.TabIndex = 3;
             this.btnEliminarUsuario.Text = "Eliminar";
             this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
-            // GestionarUsuarioFrm
+            // ManageUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,7 +141,7 @@
             this.Controls.Add(this.btnModificarUsuario);
             this.Controls.Add(this.btnAgregarUsuario);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "GestionarUsuarioFrm";
+            this.Name = "ManageUserForm";
             this.Text = "GestionarUsuarioFrm";
             this.Load += new System.EventHandler(this.GestionarUsuarioFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

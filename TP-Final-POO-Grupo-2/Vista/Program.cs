@@ -12,6 +12,7 @@ namespace Vista
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new ManageUserForm());
+            Application.Run(new LoginForm());
         }
     }
 }

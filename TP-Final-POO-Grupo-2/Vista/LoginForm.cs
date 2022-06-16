@@ -16,5 +16,21 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var validator = Controlador.UsuarioController.obtener_instancia().LoginUser(emailValue.Text, contraseñaValue.Text);
+            if (validator)
+            {
+                MessageBox.Show("Logueado exitosamente");
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
+            }
+            Hide();
+            ManageUserForm gestionarUsuarioFrm = new ManageUserForm();
+            gestionarUsuarioFrm.Show();
+        }
     }
 }

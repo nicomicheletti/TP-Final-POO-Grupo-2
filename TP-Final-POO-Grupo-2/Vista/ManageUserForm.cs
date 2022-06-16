@@ -39,6 +39,22 @@ namespace Vista
             // ASIGNO LISTA DE USUARIOA A BINDING SOURCE
             usuarioBindingSource.DataSource = Controlador.UsuarioController.obtener_instancia().GetAllUsuarios();
         }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            var selectedUser = (Modelo.Usuario)usuarioBindingSource.Current;
+           var validator =  Controlador.UsuarioController.obtener_instancia().DeleteUser(selectedUser);
+
+            if (validator == true)
+            {
+                MessageBox.Show("Usuario eliminado exitosamente");
+            }
+            else
+            {
+                MessageBox.Show("Error al eliminar usuario");
+            }
+            usuarioBindingSource.DataSource = Controlador.UsuarioController.obtener_instancia().GetAllUsuarios();
+        }
     }
 }
 
