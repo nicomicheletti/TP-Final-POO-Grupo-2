@@ -10,6 +10,7 @@ namespace Controlador
     {
         private static UsuarioController _instancia;
 
+        readonly Modelo.ContextoContainer _context =Modelo.SingletonContext.obtener_instancia().Contexto;
         public static UsuarioController obtener_instancia()
         {
             if (_instancia == null)
@@ -21,14 +22,40 @@ namespace Controlador
 
         public List<Modelo.Usuario> GetAllUsuarios()
         {
-            return Modelo.SingletonContext.obtener_instancia().Contexto.Usuarios.ToList();
+            return _context.Usuarios.ToList();
         }
         public bool AddUsuario(Modelo.Usuario usuario)
         {
             try
             {
-                Modelo.SingletonContext.obtener_instancia().Contexto.Usuarios.Add(usuario);
-                Modelo.SingletonContext.obtener_instancia().Contexto.SaveChanges();
+                _context.Usuarios.Add(usuario);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+
+        public bool EditUser(Modelo.Usuario usuario)
+        {
+            try
+            {
+               var findedUser = _context.Usuarios.FirstOrDefault(x => x.Id == usuario.Id);
+                if (findedUser == null)
+                {
+                    return false;
+                }
+
+                findedUser.Nombre = usuario.Nombre;
+                findedUser.Email = usuario.Email;
+                findedUser.Dni = usuario.Dni;
+                findedUser.Contraseña = usuario.Contraseña;
+                findedUser.Perfil = usuario.Perfil;
+
+                _context.SaveChanges();
                 return true;
             }
             catch (Exception e)
