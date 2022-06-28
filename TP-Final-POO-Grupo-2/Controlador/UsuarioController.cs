@@ -24,13 +24,20 @@ namespace Controlador
         {
             return _context.Usuarios.ToList();
         }
-        public bool AddUsuario(Modelo.Usuario usuario)
+        public int AddUsuario(Modelo.Usuario usuario)
         {
             try
             {
+                var user = _context.Usuarios.FirstOrDefault(x => x.Email == usuario.Email);
+                // VALIDAR SI YA EXISTE USUARIO CON ESE MAIL
+                if (user != null)
+                {
+                    return 1;
+                }
+
                 _context.Usuarios.Add(usuario);
                 _context.SaveChanges();
-                return true;
+                return 2;
             }
             catch (Exception e)
             {
@@ -88,7 +95,7 @@ namespace Controlador
                 {
                     return false;
                 }
-    
+
                 return true;
             }
             catch (Exception e)

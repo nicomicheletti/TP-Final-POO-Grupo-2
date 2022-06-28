@@ -48,18 +48,27 @@ namespace Vista
 
                 var validator = Controlador.UsuarioController.obtener_instancia().AddUsuario(usuario);
 
-                if (validator == true)
+                switch (validator)
                 {
-                    clearForm();
-                    MessageBox.Show("Usuario guardado exitosamente");
-                }
-                else
-                {
-                    MessageBox.Show("Error al guardar usuario");
-                }
-                Hide();
-                ManageUserForm gestionarUsuarioFrm = new ManageUserForm();
-                gestionarUsuarioFrm.Show();
+                    case 1:
+                        {
+                            MessageBox.Show("El usuario ya se encuentra registrado");
+                            break;
+                        }
+                    case 2:
+                        {
+                            clearForm();
+                            MessageBox.Show("Usuario guardado exitosamente");
+                            Hide();
+                            ManageUserForm gestionarUsuarioFrm = new ManageUserForm();
+                            gestionarUsuarioFrm.Show();
+                            break;
+                        }
+                    default:
+                        break;
+                };
+
+
             }
         }
 
