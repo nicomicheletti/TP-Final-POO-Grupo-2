@@ -19,16 +19,19 @@ namespace Vista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var validator = Controlador.UsuarioController.obtener_instancia().LoginUser(emailValue.Text, contraseñaValue.Text);
-            if (validator)
+            var user = Controlador.UsuarioController.obtener_instancia().LoginUser(emailValue.Text, contraseñaValue.Text);
+            if (user != null)
             {
-                MessageBox.Show("Logueado exitosamente");
+                Controlador.UsuarioController.obtener_instancia().Add_GlobalUser(user);
+
+                MainMenuLoginForm mainMenuLoginForm = new MainMenuLoginForm();
+                mainMenuLoginForm.Show();
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
-            Hide();
+
         }
     }
 }

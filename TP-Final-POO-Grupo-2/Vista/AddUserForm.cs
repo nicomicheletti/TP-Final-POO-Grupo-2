@@ -44,7 +44,8 @@ namespace Vista
             else
             {
                 var perfil = (Modelo.Perfil)perfilCombobox.SelectedItem;
-                Modelo.Usuario usuario = new Modelo.Usuario(nombreValue.Text, emailValue.Text, dniValue.Text, contraseñaValue.Text, perfil);
+
+                Modelo.Usuario usuario = new Modelo.Usuario(nombreValue.Text, emailValue.Text, dniValue.Text, Base64Encode(contraseñaValue.Text), perfil);
 
                 var validator = Controlador.UsuarioController.obtener_instancia().AddUsuario(usuario);
 
@@ -85,6 +86,11 @@ namespace Vista
             dniValue.Text = "";
             contraseñaValue.Text = "";
 
+        }
+        public string Base64Encode(string plainText)
+        {
+            var plainTextBytes = Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
         }
     }
 }

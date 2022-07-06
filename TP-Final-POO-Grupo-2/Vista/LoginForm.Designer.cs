@@ -46,6 +46,7 @@
             // 
             this.contraseñaValue.Location = new System.Drawing.Point(227, 123);
             this.contraseñaValue.Name = "contraseñaValue";
+            this.contraseñaValue.PasswordChar = '*';
             this.contraseñaValue.Size = new System.Drawing.Size(100, 23);
             this.contraseñaValue.TabIndex = 1;
             // 
