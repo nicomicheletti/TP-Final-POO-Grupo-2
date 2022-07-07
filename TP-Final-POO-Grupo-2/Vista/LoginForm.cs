@@ -23,7 +23,7 @@ namespace Vista
             if (user != null)
             {
                 Controlador.UsuarioController.obtener_instancia().Add_GlobalUser(user);
-
+                Hide();
                 MainMenuLoginForm mainMenuLoginForm = new MainMenuLoginForm();
                 mainMenuLoginForm.Show();
             }

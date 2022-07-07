@@ -152,7 +152,7 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Contraseña";
             // 
-            // UsuarioFrm
+            // AddUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,7 +169,7 @@
             this.Controls.Add(this.dniValue);
             this.Controls.Add(this.emailValue);
             this.Controls.Add(this.nombreValue);
-            this.Name = "UsuarioFrm";
+            this.Name = "AddUserForm";
             this.Text = " ";
             this.Load += new System.EventHandler(this.UsuarioFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfilBindingSource)).EndInit();

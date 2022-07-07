@@ -61,8 +61,6 @@ namespace Vista
                             clearForm();
                             MessageBox.Show("Usuario guardado exitosamente");
                             Hide();
-                            ManageUserForm gestionarUsuarioFrm = new ManageUserForm();
-                            gestionarUsuarioFrm.Show();
                             break;
                         }
                     default:
@@ -76,6 +74,11 @@ namespace Vista
         private void UsuarioFrm_Load(object sender, EventArgs e)
         {
             perfilBindingSource.DataSource = Controlador.PerfilController.obtener_instancia().GetAllPerfiles();
+            if (Controlador.UsuarioController.obtener_instancia().isCliente == true)
+            {
+                perfilCombobox.Enabled = false;
+
+            }
 
         }
 

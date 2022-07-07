@@ -29,7 +29,7 @@ namespace Vista
             nombreValue.Text = usuario.Nombre;
             emailValue.Text = usuario.Email;
             dniValue.Text = usuario.Dni;
-            contraseñaValue.Text = usuario.Contraseña;
+            //contraseñaValue.Text = usuario.Contraseña;
 
             perfilCombobox.SelectedItem = usuario.Perfil;
 
@@ -38,22 +38,35 @@ namespace Vista
         private void button1_Click(object sender, EventArgs e)
         {
             var perfil = (Modelo.Perfil)perfilCombobox.SelectedItem;
-            Modelo.Usuario editedUser = new Modelo.Usuario(nombreValue.Text, emailValue.Text, dniValue.Text, contraseñaValue.Text, perfil);
-            // Seteo Id para que lo pueda encontrar despues en el controller
-            editedUser.Id = usuario.Id;
-            var validator = Controlador.UsuarioController.obtener_instancia().EditUser(editedUser);
 
-            if (validator)
+            if (contraseñaValue.Text != null && contraseñaValue.Text != "")
             {
-                MessageBox.Show("Usuario guardado exitosamente");
+                Modelo.Usuario editedUser = new Modelo.Usuario(nombreValue.Text, emailValue.Text, dniValue.Text, Base64Encode(contraseñaValue.Text), perfil);
+                // Seteo Id para que lo pueda encontrar despues en el controller
+                editedUser.Id = usuario.Id;
+                var validator = Controlador.UsuarioController.obtener_instancia().EditUser(editedUser);
+
+                if (validator)
+                {
+                    MessageBox.Show("Usuario guardado exitosamente");
+                }
+                else
+                {
+                    MessageBox.Show("Error al guardar usuario");
+                }
+                Hide();
             }
             else
             {
-                MessageBox.Show("Error al guardar usuario");
+                MessageBox.Show("Debe ingresar una contraseña");
             }
-            Hide();
-            ManageUserForm gestionarUsuarioFrm = new ManageUserForm();
-            gestionarUsuarioFrm.Show();
+
+
+        }
+        public string Base64Encode(string plainText)
+        {
+            var plainTextBytes = Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
         }
     }
 }

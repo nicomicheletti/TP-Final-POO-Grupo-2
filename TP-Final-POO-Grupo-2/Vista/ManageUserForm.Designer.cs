@@ -37,7 +37,6 @@
             this.contraseñaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perfilDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnAgregarUsuario = new System.Windows.Forms.Button();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -102,19 +101,9 @@
             // 
             this.usuarioBindingSource.DataSource = typeof(Modelo.Usuario);
             // 
-            // btnAgregarUsuario
-            // 
-            this.btnAgregarUsuario.Location = new System.Drawing.Point(62, 394);
-            this.btnAgregarUsuario.Name = "btnAgregarUsuario";
-            this.btnAgregarUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarUsuario.TabIndex = 1;
-            this.btnAgregarUsuario.Text = "Agregar";
-            this.btnAgregarUsuario.UseVisualStyleBackColor = true;
-            this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
-            // 
             // btnModificarUsuario
             // 
-            this.btnModificarUsuario.Location = new System.Drawing.Point(160, 394);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(75, 380);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
             this.btnModificarUsuario.Size = new System.Drawing.Size(75, 23);
             this.btnModificarUsuario.TabIndex = 2;
@@ -124,7 +113,7 @@
             // 
             // btnEliminarUsuario
             // 
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(264, 394);
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(179, 380);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
             this.btnEliminarUsuario.Size = new System.Drawing.Size(75, 23);
             this.btnEliminarUsuario.TabIndex = 3;
@@ -139,7 +128,6 @@
             this.ClientSize = new System.Drawing.Size(871, 472);
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.btnModificarUsuario);
-            this.Controls.Add(this.btnAgregarUsuario);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ManageUserForm";
             this.Text = "GestionarUsuarioFrm";
@@ -153,7 +141,6 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button btnAgregarUsuario;
         private Button btnModificarUsuario;
         private Button btnEliminarUsuario;
         private BindingSource usuarioBindingSource;

@@ -13,6 +13,7 @@ namespace Controlador
 
         readonly Modelo.ContextoContainer _context = Modelo.SingletonContext.obtener_instancia().Contexto;
         public Modelo.Usuario globalUser = null;
+        public bool isCliente = false;
 
         public static UsuarioController obtener_instancia()
         {
@@ -96,12 +97,12 @@ namespace Controlador
                 contraseña = Base64Encode(contraseña);
 
                 var user = _context.Usuarios.FirstOrDefault(x => x.Email == email && x.Contraseña == contraseña);
-                
+
                 if (user == null)
                 {
                     return null;
                 }
-                
+
                 return user;
             }
             catch (Exception e)
@@ -125,6 +126,11 @@ namespace Controlador
         {
             var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
             return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
+        }
+
+        public void setIfIsCliente(bool _isCliente)
+        {
+            isCliente = _isCliente;
         }
     }
 }

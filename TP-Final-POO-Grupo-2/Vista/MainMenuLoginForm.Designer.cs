@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formGestionarUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +49,6 @@
             // 
             this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.formGestionarUsuarios,
-            this.listarClientesToolStripMenuItem,
             this.formUsuario});
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
@@ -62,13 +60,7 @@
             this.formGestionarUsuarios.Name = "formGestionarUsuarios";
             this.formGestionarUsuarios.Size = new System.Drawing.Size(180, 22);
             this.formGestionarUsuarios.Text = "Gestionar";
-            // 
-            // listarClientesToolStripMenuItem
-            // 
-            this.listarClientesToolStripMenuItem.Enabled = false;
-            this.listarClientesToolStripMenuItem.Name = "listarClientesToolStripMenuItem";
-            this.listarClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listarClientesToolStripMenuItem.Text = "Listar Clientes";
+            this.formGestionarUsuarios.Click += new System.EventHandler(this.formGestionarUsuarios_Click);
             // 
             // formUsuario
             // 
@@ -100,7 +92,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem usuariosToolStripMenuItem;
         private ToolStripMenuItem formGestionarUsuarios;
-        private ToolStripMenuItem listarClientesToolStripMenuItem;
         private ToolStripMenuItem formUsuario;
     }
 }
