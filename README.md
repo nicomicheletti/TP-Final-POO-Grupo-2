@@ -13,7 +13,7 @@ Acciones que puede realizar cada perfil:
 
 <br>
 
-### Members
+### Miembros
 
  Name  | Mail | Github | Role
 | :-----: | :-----: | :-----: | :-----: |
