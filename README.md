@@ -15,7 +15,7 @@ Acciones que puede realizar cada perfil:
 
 ### Miembros
 
- Name  | Mail | Github | Role
+ Nombre  | Mail | Github | Rol
 | :-----: | :-----: | :-----: | :-----: |
 | Lautaro Cabral | lautacabral96@gmail.com | [@lautarocabral](https://github.com/lautarocabral) | DEV
 | Mauricio Dottore | mauriciodottore@gmail.com | [@mauridottore](https://github.com/mauridottore) | DEV
