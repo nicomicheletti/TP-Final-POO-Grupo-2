@@ -1,4 +1,15 @@
-TP FINAL POO
+# Trabajo Final - Programación Orientada a Objetos - Grupo 2
+
+### Introducción
+
+### El proyecto
+
+#### Descripción del sistema
+
+Modelos: 
+Patrones utilizados:
+Formularios:
+Acciones que puede realizar cada perfil:
 
 <br>
 
