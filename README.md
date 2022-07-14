@@ -39,6 +39,7 @@ Formularios:
 <li>Un menú principal, en donde se puede agregar o gestionar usuarios.</li> 
 <li>Un registro el cual cuenta con un botón para agregar al usuario o cancelar y regresar al menú principal. En este formulario se deben ingresar los siguientes datos: Nombre, Email, Contraseña, DNI, y se debe seleccionar si el perfil (si es cliente o admin).</li>
 <li>Gestionar usuario, en donde se podrá ver la lista de los usuarios registrados, y se podrá modificar y eliminar a los mismos.</li>
+ </ol>
 <br>
 <br>
 El sistema cuenta con 2 tipos de perfiles. En primer lugar el o los administradores, estos tienen la posbilidad de acceder a todas las facetas del formulario. Por un lado puede agregar nuevos usuarios (admins o clientes) como también gestionar los mismos (listarlos, modificarlos o eliminarlos). El otro perfil, denominado cliente, solo tiene la posibilidad de crear nuevos perfiles pero sólo del tipo "cliente".
