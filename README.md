@@ -24,7 +24,7 @@ En la CONTROLADORA es donde se desarrolla toda la lógica de los formularios.
 Y en el MODELO, por medio de un singleton hacemos la conexión con la base de datos.
 <br>
 <br>
-##### Modelos: 
+<h5>Modelos:</h5> 
 <br>
 ##### Patrones utilizados:
 <br>
