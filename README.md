@@ -47,6 +47,7 @@ En la CONTROLADORA es donde se desarrolla toda la lógica de los formularios.
 <br>
 Y en el MODELO, por medio de un singleton hacemos la conexión con la base de datos.
 <br>
+
 ### Miembros
 
  Nombre  | Mail | Github | Rol
