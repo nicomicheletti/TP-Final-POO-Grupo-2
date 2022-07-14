@@ -6,6 +6,7 @@ En Programación Orientada a Objetos en la carrera Ingenieria en Sistemas de la 
 El mismo, consiste en la creación de diversos formularios y usuarios que van a interactuar con el sistema. A continuación desarrollaremos detalladamente el mismo.
 <br>
 <hr>
+<br>
 ### El proyecto
 
 #### Descripción del sistema
@@ -21,6 +22,7 @@ El sistema cuenta con 2 tipos de perfiles. En primer lugar el o los administrado
 <br>
 <br>
 <hr>
+<br>
 ### Miembros
 
  Nombre  | Mail | Github | Rol
