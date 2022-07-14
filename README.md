@@ -5,6 +5,7 @@ En Programación Orientada a Objetos en la carrera Ingenieria en Sistemas de la 
 <br>
 El mismo, consiste en la creación de diversos formularios y usuarios que van a interactuar con el sistema. A continuación desarrollaremos detalladamente el mismo.
 <br>
+<hr>
 ### El proyecto
 
 #### Descripción del sistema
