@@ -23,17 +23,12 @@ En la CONTROLADORA es donde se desarrolla toda la lógica de los formularios.
 <br>
 Y en el MODELO, por medio de un singleton hacemos la conexión con la base de datos.
 <br>
-<br>
-<h5>Modelos:</h5> 
-<br>
 <h5>Patrones utilizados:</h5> 
-<br>
 El sistema se desarrolla bajo “Modelo-Vista-Controladora”, este es un patrón en el diseño de software utilizado para implementar interfaces de usuario, datos y lógica de control. 
 También se usa el patrón de diseño Singleton, permitiendo que una clase tenga una sola instancia.
 <br>
 <br>
 <h5>Formularios:</h5> 
-<br>
 <ol>El sistema posee:
  <li>Un login en el cual se debe ingresar usuario y contraseña para acceder.</li>
 <li>Un menú principal, en donde se puede agregar o gestionar usuarios.</li> 
