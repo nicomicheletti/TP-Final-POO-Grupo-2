@@ -9,7 +9,6 @@ El mismo, consiste en la creación de diversos formularios y usuarios que van a 
 ### El proyecto
 
 #### Descripción del sistema
-<br>
 El sistema cuenta con 2 tipos de perfiles. En primer lugar el o los administradores, estos tienen la posbilidad de acceder a todas las facetas del formulario. Por un lado puede agregar nuevos usuarios (admins o clientes) como también gestionar los mismos (listarlos, modificarlos o eliminarlos). El otro perfil, denominado cliente, solo tiene la posibilidad de crear nuevos perfiles pero sólo del tipo "cliente". Cada usuario, esta alojado en una base de datos y poseen sus datos personales como así también una contraseña, ésta se encuentra encriptada para brindar mayor seguridad a los usuarios.
 <br>
 El mismo está dividido en VISTA, CONTROLADORA y MODELO.
