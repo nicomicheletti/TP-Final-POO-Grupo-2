@@ -15,7 +15,8 @@ Patrones utilizados:
 <br>
 Formularios:
 <br>
-En sistema cuenta con 2 tipos de perfiles. En primer lugar el o los administradores, estos tienen la posbilidad de acceder a todas las facetas del formulario. Por un lado puede agregar nuevos usuarios (admins o clientes) como también gestionar los mismos (listarlos, modificarlos o eliminarlos). El otro perfil, denominado cliente, solo tiene la posibilidad de crear nuevos perfiles pero sólo del tipo "cliente".
+<br>
+El sistema cuenta con 2 tipos de perfiles. En primer lugar el o los administradores, estos tienen la posbilidad de acceder a todas las facetas del formulario. Por un lado puede agregar nuevos usuarios (admins o clientes) como también gestionar los mismos (listarlos, modificarlos o eliminarlos). El otro perfil, denominado cliente, solo tiene la posibilidad de crear nuevos perfiles pero sólo del tipo "cliente".
 <br>
 
 ### Miembros
