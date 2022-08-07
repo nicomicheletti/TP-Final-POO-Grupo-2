@@ -41,4 +41,4 @@ También se usa el patrón de diseño Singleton, permitiendo que una clase tenga
 | Lautaro Cabral | lautacabral96@gmail.com | [@lautarocabral](https://github.com/lautarocabral) | DEV
 | Mauricio Dottore | mauriciodottore@gmail.com | [@mauridottore](https://github.com/mauridottore) | DEV
 | Nicolás Micheletti | nicolasamicheletti@gmail.com | [@nicomicheletti](https://github.com/nicomicheletti) | DEV
-| Germán Tagliarini | germanarielt@gmail.com | [@](https://github.com/) | DEV
+| Germán Tagliarini | germanarielt@gmail.com | [@ger1396](https://github.com/ger1396) | DEV
