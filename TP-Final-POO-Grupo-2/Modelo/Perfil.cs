@@ -20,14 +20,14 @@ namespace Modelo
             this.Usuario = new HashSet<Usuario>();
             this.Formulario = new HashSet<Formulario>();
         }
-    
-        public int Id { get; set; }
-        public string Nombre { get; set; }
         public override string ToString()
         {
             return this.Nombre;
         }
 
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Usuario> Usuario { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

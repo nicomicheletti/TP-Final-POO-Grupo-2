@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 06/14/2022 22:15:58
+-- Date Created: 08/08/2022 23:27:39
 -- Generated from EDMX file: C:\Users\lautaro\Documents\Repos\TP-Final-POO-Grupo-2\TP-Final-POO-Grupo-2\Modelo\Contexto.edmx
 -- --------------------------------------------------
 
@@ -18,7 +18,7 @@ GO
 -- --------------------------------------------------
 
 IF OBJECT_ID(N'[dbo].[FK_UsuarioPerfil]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[UsuarioSet] DROP CONSTRAINT [FK_UsuarioPerfil];
+    ALTER TABLE [dbo].[Usuarios] DROP CONSTRAINT [FK_UsuarioPerfil];
 GO
 IF OBJECT_ID(N'[dbo].[FK_PerfilFormulario_Perfil]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[PerfilFormulario] DROP CONSTRAINT [FK_PerfilFormulario_Perfil];
@@ -37,17 +37,17 @@ GO
 -- Dropping existing tables
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[UsuarioSet]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[UsuarioSet];
+IF OBJECT_ID(N'[dbo].[Usuarios]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Usuarios];
 GO
-IF OBJECT_ID(N'[dbo].[PerfilSet]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[PerfilSet];
+IF OBJECT_ID(N'[dbo].[Perfiles]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Perfiles];
 GO
-IF OBJECT_ID(N'[dbo].[FormularioSet]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[FormularioSet];
+IF OBJECT_ID(N'[dbo].[Formularios]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Formularios];
 GO
-IF OBJECT_ID(N'[dbo].[PermisosSet]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[PermisosSet];
+IF OBJECT_ID(N'[dbo].[Permisos]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Permisos];
 GO
 IF OBJECT_ID(N'[dbo].[PerfilFormulario]', 'U') IS NOT NULL
     DROP TABLE [dbo].[PerfilFormulario];
@@ -94,6 +94,13 @@ CREATE TABLE [dbo].[Permisos] (
 );
 GO
 
+-- Creating table 'Productos'
+CREATE TABLE [dbo].[Productos] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Descripcion] nvarchar(max)  NOT NULL
+);
+GO
+
 -- Creating table 'PerfilFormulario'
 CREATE TABLE [dbo].[PerfilFormulario] (
     [Perfil_Id] int  NOT NULL,
@@ -133,6 +140,12 @@ GO
 -- Creating primary key on [Id] in table 'Permisos'
 ALTER TABLE [dbo].[Permisos]
 ADD CONSTRAINT [PK_Permisos]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
+-- Creating primary key on [Id] in table 'Productos'
+ALTER TABLE [dbo].[Productos]
+ADD CONSTRAINT [PK_Productos]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 

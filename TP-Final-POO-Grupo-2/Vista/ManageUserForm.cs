@@ -55,6 +55,11 @@ namespace Vista
             }
             usuarioBindingSource.DataSource = Controlador.UsuarioController.obtener_instancia().GetAllUsuarios();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 

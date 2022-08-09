@@ -32,6 +32,7 @@
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formGestionarUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.formUsuario = new System.Windows.Forms.ToolStripMenuItem();
+            this.formProducto = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             // 
             this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.formGestionarUsuarios,
-            this.formUsuario});
+            this.formUsuario,
+            this.formProducto});
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
@@ -69,6 +71,14 @@
             this.formUsuario.Size = new System.Drawing.Size(180, 22);
             this.formUsuario.Text = "Agregar";
             this.formUsuario.Click += new System.EventHandler(this.formUsuario_Click);
+            // 
+            // formProducto
+            // 
+            this.formProducto.Enabled = false;
+            this.formProducto.Name = "formProducto";
+            this.formProducto.Size = new System.Drawing.Size(180, 22);
+            this.formProducto.Text = "Producto";
+            this.formProducto.Click += new System.EventHandler(this.formProducto_Click);
             // 
             // MainMenuLoginForm
             // 
@@ -93,5 +103,6 @@
         private ToolStripMenuItem usuariosToolStripMenuItem;
         private ToolStripMenuItem formGestionarUsuarios;
         private ToolStripMenuItem formUsuario;
+        private ToolStripMenuItem formProducto;
     }
 }

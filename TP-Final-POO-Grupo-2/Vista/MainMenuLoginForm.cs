@@ -55,5 +55,11 @@ namespace Vista
             ManageUserForm manageUserForm = new ManageUserForm();
             manageUserForm.Show();
         }
+
+        private void formProducto_Click(object sender, EventArgs e)
+        {
+            ProductoForm productoForm = new ProductoForm();
+            productoForm.Show();
+        }
     }
 }
